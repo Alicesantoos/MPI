@@ -65,7 +65,7 @@ session_start();
             </div>
 
             <div class="form-group mb-3">
-                <label for="senha">Senha</label>
+                <label for="senha">Senha(Cadastro)</label>
                 <input type="password" id="senha" name="senha" placeholder="5 caracteres" class="form-control" required>
             </div>
 

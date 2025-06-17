@@ -250,9 +250,7 @@ width: 100%; height: 100%; z-index: 9999;">
   <div class="card text-center shadow" style="background-color: #fff0fb;">
     <div class="card-body">
       <h1 class="mb-3">🎉 Parabéns! 🎉</h1>
-      <p class="lead mb-4">Você aprendeu os animais!🐾</p>
-
-      <img src="../../imagens/trofeú.webp" alt="Troféu" style="width: 150px;" class="mb-3">
+     <img src="../../imagens/img_colors/trofeu.png" alt="Parabéns" style="width: 80%; max-width: 500px;" class="mb-3">
 
       <div class="balloons d-flex justify-content-center flex-wrap gap-3 mb-4">
         <div class="balloon" onclick="popBalloon(this)"></div>
