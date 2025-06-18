@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../conexao.php';
+require_once 'conexao.php';
 
 if (!isset($_SESSION['usuario_id'])) {
     die("Usuário não está logado.");

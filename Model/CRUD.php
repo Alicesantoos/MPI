@@ -32,10 +32,10 @@ if (isset($_POST["editar"])) {
 
     $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
-    $stmt = $db->prepare("UPDATE usuarios SET nome = ?, email = ?, senha = ? WHERE id = ?");
-    if ($stmt->execute([$nome_crianca, $email_responsavel, $senhaHash, $id])) {
-        $_SESSION['message-update'] = 'Usuário atualizado com sucesso!';
-    }
+    $stmt = $db->prepare("UPDATE usuarios SET nome_crianca = ?, nome_responsavel = ?, email_responsavel = ?, senha = ? WHERE id = ?");
+if ($stmt->execute([$nome_crianca, $nome_responsavel, $email_responsavel, $senhaHash, $id])) {
+    $_SESSION['message-update'] = 'Usuário atualizado com sucesso!';
+}
 }
 
 if (isset($_GET["deletar"])) {

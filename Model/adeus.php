@@ -34,15 +34,6 @@ session_start();
     .mensagem p {
       font-size: 1.3rem;
     }
-    .mascote {
-      width: 150px;
-      margin-top: 20px;
-      animation: float 2s ease-in-out infinite;
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
     .btn-voltar {
       margin-top: 30px;
       font-size: 1.2rem;
@@ -64,9 +55,7 @@ session_start();
   <h1>Sentiremos sua falta 😢</h1>
   <p>Sua conta foi excluída com sucesso.</p>
   <p>Esperamos te ver novamente em breve!</p>
-  <img src="imagens/img_site/Gigi_balao.png" alt="Mascote se despedindo" class="mascote">
-  <br>
-  <a href="index.php" class="btn-voltar">Voltar para a Página Inicial</a>
+  <a href="../index.php" class="btn-voltar">Voltar para a Página Inicial</a>
 </div>
 
 </body>

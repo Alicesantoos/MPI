@@ -50,7 +50,20 @@
             <h5 class="bi bi-house-door-fill" style="font-size: 1.2rem;">Início</h5>
         </a>
     </header>
-   
+
+    <?php
+session_start();
+
+if (isset($_SESSION['senha_erro'])) {
+    echo "<div class='alert alert-danger text-center w-100'>" . $_SESSION['senha_erro'] . "</div>";
+    unset($_SESSION['senha_erro']);
+}
+
+if (isset($_SESSION['erro_email'])) {
+    echo "<div class='alert alert-warning text-center w-100'>" . $_SESSION['erro_email'] . "</div>";
+    unset($_SESSION['erro_email']);
+}
+?> 
     <div class="form">
         <form action="../Model/cadastrar.php" method="POST">
             <h1> Cadastre-se </h1>

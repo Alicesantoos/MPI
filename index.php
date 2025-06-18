@@ -194,6 +194,24 @@ session_start();
     background-color:#a862b3;
 }
 
+.email-contato {
+    position: absolute;
+    right: 140px;
+    top: 26%;
+    background-color: #a545b4;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.email-contato:hover {
+    background-color: #a862b3;
+}
 #content-painel{
     display: flex;
     justify-content: center;
@@ -215,6 +233,9 @@ session_start();
     <h1>Meu primeiro Inglês</h1>
     <?php if (isset($_SESSION['usuario_id'])): ?>
 <button class="botao-excluir" onclick="OpenExclude()">Excluir Conta</button>
+<div class="email-contato">
+  <i class="bi bi-envelope-fill"></i> Inglêskids25@gmail.com 
+</div>
     <?php endif; ?>
 </header>
 
